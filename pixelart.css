@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Yanone+Kaffeesatz');
+body {
+  text-align: center;
+  margin: 0;
+  user-select: none;
+  cursor: default;
+  background-color: #3e2f30
+}
+
+p.rgbscale {
+  display: inline;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+  padding: 0 10px 0 0;
+  margin: 0;
+  color: #b3c9c9;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 30px;
+  padding: 3px 0 30px 0;
+  margin: 0;
+  color: #b3c9c9;
+}
+
+h2 {
+  margin: 0 0 0.25em;
+  font-size: 25px;
+  font-family: 'Amaranth', sans-serif;
+  color: #dbcccc;
+}
+
+h2:first-of-type {
+  margin-top: 0em;
+}
+
+table, tr, td {
+  border: 0.01px solid white;
+  cursor: crosshair;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #ccc;
+}
+
+tr {
+  height: 15px;
+}
+
+td {
+  width: 15px;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  width: 4em;
+}
+
+.left-panel {
+  float: left;
+  width: 20%;
+  background-color: #513638;
+  padding: 10px 50px 50px 50px;
+  height: 100%;
+  position: relative;
+  margin: 0;
+}
+
+@media (max-height: 700px) {
+  .left-panel {
+    height: 150%;
+  }
+}
+
+@media (max-height: 600px) {
+  .left-panel {
+    height: 190%;
+  }
+}
+
+@media (max-height: 500px) {
+  .left-panel {
+    height: 220%;
+  }
+}
+
+@media (max-height: 400px) {
+  .left-panel {
+    height: 250%;
+  }
+}
+
+.pparams {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 20px;
+  color: lightgray;
+  margin-bottom: 0;
+}
+
+.inputHeight, .inputWeight {
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 0;
+  color: white;
+  margin-top: 9px;
+  padding: 5px;
+  width: 25px;
+  border: none;
+  font-weight: bold;
+  background-color: #857180;
+  border-radius: 10px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.submit:focus, .reset:focus, .slider:focus, .small:focus, .medium:focus, .large:focus, .colorslider:focus, .canvasImageSave:focus, .inputHeight:focus, .inputWeight:focus, .background:focus, .showGrid:focus {
+  outline: 0;
+}
+
+.submit, .reset, .canvasImageSave, .background, .showGrid {
+  position: relative;
+  background-color: #857180;
+  width: 100px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+  padding: 9px 0 5px 0;
+  color: white;
+  transition: ease-in-out .3s;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, .25);
+  border-radius: 20px;
+  border: 0;
+  margin: 10px 5px 10px 5px;
+}
+
+.sliders {
+  display: inline-block;
+}
+
+.slidersTwo {
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.submit:hover, .reset:hover, .canvasImageSave:hover, .background:hover, .showGrid:hover {
+  cursor: pointer;
+  background-color: #af99a9;
+  transition: ease-in-out .3s;
+}
+
+.reset {
+  margin-top: 30px;
+}
+
+.small, .medium, .large {
+  padding: 6px;
+  width: 40px;
+  background-color: #cdb5cd;
+  border-radius: 10px;
+  margin: 2px;
+  opacity: 0.7;
+  transition: opacity .2s;
+  border: none;
+  cursor: pointer;
+}
+
+.small:hover, .medium:hover, .large:hover {
+  opacity: 1;
+}
+
+.canvas {
+  float: left;
+  width: 70%;
+  margin-top: 30px;
+}
+
+.selected {
+  opacity: 1;
+}
+
+.colorPalette {
+  width: 100%;
+}
+
+.slider, .colorslider {
+  -webkit-appearance: none;
+  width: 180px;
+  height: 20px;
+  background: #cdb5cd;
+  opacity: 0.7;
+  transition: opacity .2s;
+  border-radius: 50px;
+}
+
+.slider:hover, .colorslider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb, .colorslider::-webkit-slider-thumb {
+  border-radius: 50px;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #292429;
+  cursor: pointer;
+}
+
+.colorslider {
+  margin-top: 10px;
+}
+
+.bluetext, .redtext, .greentext {
+  color: white;
+  margin-top: 9px;
+  padding: 5px;
+  width: 25px;
+  background-color: #857180;
+  border-radius: 10px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: white;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.colordisplay, .colordisplayTwo {
+  background-color: rgb(255, 80, 89);
+  width: 10px;
+  height: 10px;
+  padding: 11px;
+  border-radius: 100px;
+  margin: 0 auto;
+}
+
+.colordisplayTwo {
+  background-color: rgb(0, 0, 0);
+}
+
+.red, .orange, .yellow, .lime, .sage, .forest, .grey, .cyan, .royal, .navy, .purple, .purplepop, .magenta, .black, .ltpink, .ltblue, .ltyellow, .ltpurple, .tan, .brown, .white, .erase {
+  float: left;
+  margin: 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+.erase {
+  margin: 0 auto;
+}
+
+.red {
+  background-color: #B72025;
+}
+
+.orange {
+  background-color: #F17923;
+}
+
+.yellow {
+  background-color: #FEE801;
+}
+
+.lime {
+  background-color: #7AC723;
+}
+
+.sage {
+  background-color: #9FB94C;
+}
+
+.forest {
+  background-color: #015615;
+}
+
+.grey {
+  background-color: #4D4D4D;
+}
+
+.cyan {
+  background-color: #0EDAF3;
+}
+
+.royal {
+  background-color: #2C3FA8;
+}
+
+.navy {
+  background-color: #122256;
+}
+
+.purple {
+  background-color: #581C74;
+}
+
+.purplepop {
+  background-color: #952B83;
+}
+
+.magenta {
+  background-color: #D70A8B;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.ltpink {
+  background-color: #F9B6E1;
+}
+
+.ltblue {
+  background-color: #B5DCFB;
+}
+
+.ltyellow {
+  background-color: #F3F2B2;
+}
+
+.ltpurple {
+  background-color: #D9B9FA;
+}
+
+.tan {
+  background-color: #D0C085;
+}
+
+.brown {
+  background-color: #805101;
+}
+
+.erase {
+  background-color: white;
+  border: 3px solid red;
+}
+
+.erase:after {
+  left: 0;
+  margin-top: 13.5px;
+  padding-top: 4px;
+  background: #c00;
+  content: "";
+  width: 100%;
+  display: block;
+  transform: rotate(50deg);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}

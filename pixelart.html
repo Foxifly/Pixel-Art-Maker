@@ -1,0 +1,79 @@
+<!--<!DOCTYPE html> -->
+<html>
+
+<head>
+  <title>Pixel Art Maker!</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+  <link rel="stylesheet" href="pixelart.css">
+</head>
+
+<body>
+  <div id="left-panel" class="left-panel">
+    <h2>Canvas Size</h2><br>
+    <form id="sizePicker" class="sizePicker">
+      <button id="sizeSelectA" class="small" value="small">S</button>
+      <button id="sizeSelectB" class="medium" value="medium">M</button>
+      <button id="sizeSelectC" class="large" value="large">L</button> <br>
+      <p class="pparams">Height:
+        <div class="sliders">
+          <input id="sliderHeight" type="range" min="1" max="40" value="20" class="slider"><br>
+          <input type="number" id="inputHeight" class="inputHeight" name="height" max="40" min="1" value="20"></p>
+      <p class="pparams">Width:<br>
+        <input id="sliderWidth" type="range" min="1" max="40" value="20" class="slider"><br>
+        <input type="number" id="inputWeight" class="inputWeight" name="width" max="40" min="1" value="20"></p>
+      <input class="submit" type="submit"><br>
+      </div>
+    </form>
+    <h2>Canvas Color</h2>
+    <div class="colorPalette">
+      <div id="colorA" class="red"></div>
+      <div id="colorB" class="purple"></div>
+      <div id="colorC" class="purplepop"></div>
+      <div id="colorD" class="magenta"></div>
+      <div id="colorE" class="ltpink"></div>
+      <div id="colorf" class="ltpurple"></div>
+      <div id="colorG" class="ltblue"></div>
+      <div id="colorH" class="cyan"></div>
+      <div id="colorI" class="royal"></div>
+      <div id="colorJ" class="navy"></div>
+      <div id="colorK" class="forest"></div>
+      <div id="colorL" class="lime"></div>
+      <div id="colorM" class="sage"></div>
+      <div id="colorN" class="ltyellow"></div>
+      <div id="colorO" class="yellow"></div>
+      <div id="colorP" class="orange"></div>
+      <div id="colorQ" class="tan"></div>
+      <div id="colorR" class="brown"></div>
+      <div id="colorS" class="grey"></div>
+      <div id="colorT" class="black"></div> <br>
+      <div class="erase"></div>
+    </div>
+    <div class="slidersTwo">
+      <div id="colordisplay" class="colordisplay"></div>
+      <p class="rgbscale">R</p> <input id="redslider" type="range" min="0" max="255" value="255" class="colorslider">
+      <div id="redtext" class="redtext"></div>
+      <p class="rgbscale">G </p><input id="greenslider" type="range" min="0" max="255" value="80" class="colorslider">
+      <div id="greentext" class="greentext"></div>
+      <p class="rgbscale">B</p> <input id="blueslider" type="range" min="0" max="255" value="89" class="colorslider">
+      <div id="bluetext" class="bluetext"></div>
+    </div><br>
+    <button class="reset" value="Reset">Clear Canvas</button> <br>
+    <button class="canvasImageSave" id="canvasImageSave">Save Image</button>
+    <button class="showGrid">Show Grid</button>
+  </div>
+  <div id="canvas" class="canvas">
+    <h1>Lindsay's Pixel Art Maker</h1>
+    <h2>Selected color: <div id="colordisplayTwo" class="colordisplayTwo"></div> </h2>
+    <h2>Background: <br>
+    <button class="background" value="large">Paint it!</button></h2>
+    <table id="pixelCanvas"></table>
+
+    <script src="pixelart.js">
+    </script>
+  </div>
+</body>
+
+</html>
